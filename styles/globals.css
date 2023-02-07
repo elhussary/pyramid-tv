@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+  @apply dark:text-white dark:bg-[#060507];
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.splide__arrow {
+  transform: translateY(-180%) !important;
+}
+.splide__arrows button {
+  @apply bg-yellow-300 opacity-100;
+}
+.splide__arrow--next {
+  right: 2rem !important;
+}
+.splide__arrow:disabled {
+  @apply opacity-60 !important;
+}
